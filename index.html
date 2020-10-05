@@ -33,7 +33,8 @@
       <div class="logo">
         <img  class="logo" src="/images/logo-bookmark.svg" alt="logo">
       </div>
-			<nav>
+      <img class="hambuger" src="/images/icon-hamburger.svg">
+			<nav class="nav-bar-link">
         <ul>
           <li><a href="/">Features</a></li>
           <li><a href="/">Pricing</a></li>
@@ -53,12 +54,9 @@
 					a new browser tab and see your sites load <br/> instantly. Try it for free.
         </p>
         <div class="size-btn">
-          <div class="btn-1">
-            <a href="#">Get it on Chrome</a>
-          </div>
-            <div class="btn-2">
-              <a href="#">Get it on Firefox</a>
-            </div>
+          <button class="btn-1" type="button">Get it on Chrome</button>
+          <button class="btn-2" type="button">Get it on Firefox</button>
+         </div>
         </div>
 			</div>
 		  <div class="hero">
@@ -75,61 +73,59 @@
         access them on the go.</p>
       </div>
       <div class="features-section">
-        <a href="0">Simple Bookmarking</a>
-        <a href="1">Speedy Searching</a>
-        <a href="2">Easy Sharing</a>
+        <hr>
+        <a class="tablinks" onclick="tabHeader(event, 'Simple')">Simple Bookmarking</a>
+        <hr>
+        <a class="tablinks" onclick="tabHeader(event, 'Speedy')">Speedy Searching</a>
+        <hr>
+        <a class="tablinks" onclick="tabHeader(event, 'Easy')">Easy Sharing</a>
+        <hr>
       </div>
-      <section>
-        <div class="ftext-1 f-side">
-          <h3 class="f-side-text">Bookmark in one click</h3>
+      <section id="Simple" class="tabcontent">
+        <div class="f-side">
+          <h3 class="f-side-text content">Bookmark in one click</h3>
           <p class="ftext-2 f-side-text"> Organize your bookmarks however you like. Our <br/>simple
            drag-and-drop interface gives you complete <br/> control over how you manage your
            favourite sites.</p>
-           <div class="btn-3">
-            <a href="#">More Info</a> 
-            </div>
-        </div>
-        <div class="f-img-1">
+           <button class="btn-3" type="button">More Info</button>
+          </div>
+        <div class="f-img-1 feature-bg ">
           <img src="/images/illustration-features-tab-1.svg">
           </div>
-          <div class="feature-bg f-bg-1">
+          <div class=" f-bg-1">
           </div>
       </section>
-      <section>
-         <div class="ftext-1 f-side">
-          <h3 class="f-side-text">Intelligent search</h3>
+      <section id="Speedy" class="tabcontent">
+         <div class="f-side f-top">
+          <h3 class="f-side-text content">Intelligent search</h3>
           <p class="ftext-2 f-side-text"> Our powerful search feature
             will help you find saved <br/> sites in no 
             time at all. No need to trawl through
             all of <br/> your bookmarks.</p>
-            <div class="btn-3">
-              <a href="#">More Info</a> 
-          </div>
+            <button class="btn-3" type="button">More Info</button>
          </div>
          <div class="f-img-1">
           <img src="/images/illustration-features-tab-2.svg">
         </div>
-        <div class="feature-bg f-bg-2">
+        <div class=" f-bg-2">
         </div>
          </section>
-         <section>
-         <div class="ftext-1 f-side">
-          <h3 class="f-side-text">Share your bookmarks</h3>
+         <section id="Easy" class="tabcontent">
+         <div class="f-side f-top">
+          <h3 class="f-side-text content">Share your bookmarks</h3>
           <p class="ftext-2 f-side-text">Easily share your bookmarks and collections with <br/>others. 
             Create a shareable link that you can
             send at <br/> the click of a botton.</p>
-           <div class="btn-3">
-            <a href="#">More Info</a> 
-            </div>
+            <button class="btn-3" type="button">More Info</button>
          </div>
          <div class="f-img-1">
           <img src="/images/illustration-features-tab-3.svg">
           </div>
-          <div class="feature-bg f-bg-3">
+          <div class="f-bg-3">
           </div>
          </section>
     </section>
-       <section>
+       <section class="dw-top">
          <h3 class="ftext-1">Download the extension</h3>
          <p class="ftext-2">We’ve got more browsers in the pipeline. Please do let us know if <br/>you’ve got a
           favourite you’d like us to prioritize.</p>
@@ -137,27 +133,27 @@
        <section class="sec-boxes">
          <div class="sec-box box-1">
          <img src="/images/logo-chrome.svg" alt="chrome">
-         <h4 class="text-1">Add to Chrome</h4>
-         <p class="ftext-2">Minimum version 62</p>
+         <h4 class="text-1 text-up">Add to Chrome</h4>
+         <p class="ftext-2 text-up">Minimum version 62</p>
          <!-- <img src="/images/bg-dots.svg"> -->
-         <div class="btn-4"><a href="#">Add & Install Extension</a></div>
+         <button class="btn-4" type="button">Add & Install Extension</button>
          </div>
          <div class="sec-box box-2">
           <img src="/images/logo-firefox.svg" alt="firefox">
-          <h4 class="text-1" >Add to Firefox</h4>
-          <p class="ftext-2">Minimum version 55</p>
+          <h4 class="text-1 text-up" >Add to Firefox</h4>
+          <p class="ftext-2 text-up">Minimum version 55</p>
           <!-- <img src="/images/bg-dots.svg"> -->
-          <div class="btn-4"><a href="#">Add & Install Extension</a></div>
+          <button class="btn-4" type="button">Add & Install Extension</button>
          </div>
          <div class="sec-box box-3">
           <img src="/images/logo-opera.svg" alt="opera">
-          <h4 class="text-1">Add to Opera</h4>
-          <p class="ftext-2">Minimum version 46</p>
+          <h4 class="text-1 text-up">Add to Opera</h4>
+          <p class="ftext-2 text-up">Minimum version 46</p>
           <!-- <img src="/images/bg-dots.svg"> -->
-          <div class="btn-4"><a href="#">Add & Install Extension</a></div>
+          <button class="btn-4" type="button">Add & Install Extension</button>
          </div>
        </section>
-		   <section>
+       <section>
          <h3 class="ftext-1">Frequently Asked Questions</h3>
          <p class="ftext-2" >Here are some of our FAQs. If you have any other questions <br/>
           you’d like answered please feel free to email us.</p>
@@ -204,9 +200,7 @@
         </div>
       </div>
     </div>
-    <div class="btn-3 more-btn">
-      <a href="#">More Info</a> 
-      </div>
+    <button class="btn-3 more-btn" type="button">More Info</button>
 		  </div>
     <section class="contact-bg">
       <div>
@@ -215,13 +209,14 @@
       </div>
        <div>
          <form>
-          <input id="email" class="input-field" type="text" placeholder="Enter your email address">
-          <button class="shown" id="validate"  type="button">Contact Us</button>
+          <input id="email" class="inputfield"  type="text" placeholder="Enter your email address">
+          <button class="shown" id="validate" onclick="validateForm('.inputfield');" type="button">Contact Us</button>
          </form>
+         <div class="status"></div>
        </div>
     </section>
 		<footer>
-      <section class="footer-bg">
+      <section class="footer-bg footer-end">
       <div class="logo">
         <img src="/images/logo-bookmark-white.svg" alt="logo" />
       </div>
@@ -231,11 +226,17 @@
           <li><a class="footer-link" href="#">Features</a></li>
           <li><a class="footer-link" href="#">Pricing</a></li>
           <li><a class="footer-link" href="#">Contact</a></li>
-          <li><a class="foote" href="#"><img src="/images/icon-facebook.svg" alt="" ></a></li>
-          <li><a class="foote" href="#"><img src="/images/icon-twitter.svg" alt="" ></a></li>
         </ul>
+        <a class="foote" href="#"><img src="/images/icon-facebook.svg" alt="" ></a>
+         <a class="foote" href="#"><img src="/images/icon-twitter.svg" alt="" ></a>
        </nav>
       </div>
+      <div class="footer-social">
+        <ul>
+         
+        
+        </ul>
+     </div>
       </section>
 			<p class="attribution">
 				Challenge by
@@ -247,3 +248,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</body>
 </html>
+
+
+
+
+
+ 

@@ -7,8 +7,6 @@
 
 body{
     font-family:Rubik;
-    /* display: flex;
-    justify-content: center; */
 }
 
 h1{
@@ -32,8 +30,6 @@ h4{
 p{
     font-size: 1rem;
 }
-
-
 
 li{
     list-style: none;
@@ -83,7 +79,7 @@ ul a:hover{
 .btn-0 a{
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: .8rem;
     background:#fa5757;
     color:white;
     border: 2px solid #fa5757;
@@ -100,6 +96,9 @@ ul a:hover{
     border-radius: 4px;
 }
 
+.hambuger{
+    display: none;
+}
 /* main{
     display: flex;
 } */
@@ -123,7 +122,6 @@ ul a:hover{
 
 .hero img{
     height: 65vh;
-
 }
 
 
@@ -146,81 +144,80 @@ ul a:hover{
 }
 
 .size-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+    
     margin: 4rem 0;
 }
 
+
+ .btn-2{
+    margin-left: 3rem;
+} 
+
 .btn-1{
-    flex: 1;
-}
-
-.btn-2{
-    flex: 4;
-}
-
-.btn-1 a{
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: .8rem;
     background:#5368df;
     color:#ffffff;
     border: 2px solid #5368df;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 4px;
+    cursor: pointer;
 }
 
-.btn-1 a:hover,
-.btn-1 a:active{
+.btn-1:hover,
+.btn-1:active{
    color: #5368df;
     background:white;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 4px;
 }
 
 
-.btn-2 a{
+.btn-2{
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: .8rem;
     background:#ffffff;
     color:#000000;
-    border: 3px solid #f5f5f5;
-    border-radius: 8px;
-    padding: 1rem 2rem;
+    border: 2px solid #e4e4e4;
+    border-radius: 4px;
+    padding: 1rem 1rem;
+    cursor: pointer;
 }
 
-.btn-2 a:hover,
-.btn-2 a:active{
+.btn-2:hover,
+.btn-2:active{
    color: #000000;
     background:white;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 4px;
     border: 2px solid #000000;
 }
 
+
+
 .btn-3{
     margin-top: 2.5rem;
-    margin-right: 14rem;
+    margin-right: 19rem;
 }
-.btn-3 a{
+.btn-3{
     text-decoration: none;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: .8rem;
     background:#5368df;
     color:white;
     border: 2px solid #5368df;
-    padding: 1rem;
+    padding: 1rem 1rem;
     border-radius: 4px;
-
+    cursor: pointer;
 }
 
-.btn-3 a:hover,
-.btn-3 a:active{
+.btn-3:hover,
+.btn-3:active{
    color: #5368df;
     background:white;
-    padding: 1rem;
+    padding: 1rem 1rem;
     border-radius: 4px;
 }
 
@@ -228,6 +225,7 @@ ul a:hover{
 .ftext-1 {
     font-weight: 700;
     text-align: center;
+    margin-top: 5rem;
    
 }
 
@@ -241,7 +239,13 @@ ul a:hover{
 .features-section{
     margin: 2rem;
     text-align: center;
+    line-height: 3.5rem;
     
+}
+
+
+hr{
+    display: none;
 }
 
 
@@ -256,27 +260,20 @@ ul a:hover{
     color:#fa5757;
 }
 
-.feature-bg{
+.features-section a:active{
+    color:#fa5757;
+}
+
+/* .feature-bg{
     background: #5368df;
-    height: 45vh;
-    width: 50vw;
+    height: 50%;
+    width: 35vw;
     border-bottom-right-radius: 8rem;
-    position: absolute;
-    right: 50rem;
+    position: relative;
+    right: 4rem; 
     z-index: -1; 
-}
+} */
 
-.f-bg-1{
-    top: 69rem;
-}
-
-.f-bg-2{
-    top: 104rem;
-}
-
-.f-bg-3{
-    top: 135rem;
-}
 
 .f-side{
     margin-top: 6rem;
@@ -327,19 +324,19 @@ ul a:hover{
 .btn-4{
     margin-top: 2rem;
 }
-.btn-4 a{
-    text-decoration: none;
+.btn-4{
     font-weight: 500;
-    font-size: 1rem;
+    font-size: .8rem;
     background:#5368df;
+    cursor: pointer;
     color:white;
     border: 2px solid #5368df;
     padding: 1rem 1rem;
     border-radius: 4px;
 }
 
-.btn-4 a:hover,
-.btn-4 a:active{
+.btn-4:hover,
+.btn-4:active{
    color: #5368df;
     background:white;
     padding: 1rem 1rem;
@@ -430,8 +427,8 @@ ul a:hover{
   }
 
   .more-btn{
-      text-align: center;
-      margin: 4rem 0rem;
+      
+      margin: 4rem 17rem;
   }
   
   .contact-bg{
@@ -486,7 +483,7 @@ form{
     border-radius: 4px;
 }
 
-.input-field{
+.inputfield{
     padding: 1rem;
     border: 2px solid #ffffff;
     border-radius: 4px;
@@ -516,15 +513,12 @@ form{
 .logo img{
     position: relative;
     top: 4.3rem;
-    left: 10rem;
+    left: 8rem;
     height: 2rem;
 
 }
 
 .footer-bar ul {
-    display: flex;
-    justify-content: space-between;
-    flex: 4;
     margin: 0 15rem;
 }
 
@@ -533,8 +527,206 @@ form{
     text-decoration: none;
     font-weight: 600;
     color: #ffffff;
+    padding: 3rem;
 }
 
 .footer-links a:hover{
     color:#fa5757;
 }
+
+.foote{
+    margin: 2rem;
+}
+
+
+@media (max-width: 500px){
+    body{
+        font-family:Rubik;
+    }
+    
+    h1{
+        font-family: Rubik;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    h2{
+       font-size: 1.4rem;
+    }
+    
+    h3{
+        font-size: 1.4rem;
+    }
+    
+    h4{
+        font-size: 1rem;
+    }
+    
+    p{
+        font-size: .8rem;
+    }
+    
+    li{
+        list-style: none;
+    }
+
+    .logo img{
+        position: relative;
+        top: 4.3rem;
+        left: 4.2rem;
+        height: 1.2rem;
+    
+    }
+
+    .hero{
+        margin: 6rem 0;
+        position: absolute;
+        left: 5rem;
+        top: 2rem;
+    }
+
+    .nav-bar-link{
+        display: none;
+    }
+
+    .hero img{
+        height: 30vh;
+    }
+    
+    .hero-bg{
+        background: #5368df;
+        height: 20vh;
+        width: 90vw;
+        border-bottom-left-radius: 3rem;
+        position: absolute;
+        left: 8rem;
+        top: 11rem;
+        z-index: -1;
+    }
+
+    .text-hero{
+        display: flex;
+        flex-direction: column;
+        margin: 15rem -2rem;
+    }
+    
+    .text-1{
+        font-weight: 600;
+        margin-top: 7rem;
+        width: 70vh;
+        text-align: center;
+    }
+
+    .text-2{
+        font-weight: 400;
+       text-align: center;
+       width: 75vh;
+
+    }
+
+    .size-btn {
+        margin: 4rem;
+        /* padding: 4rem; */
+    }
+
+    .ftext-1 {
+        text-align: center;
+        right: 5rem;
+    }
+
+    .ftext-2{
+        text-align: center;
+        width: 120vw;
+        position: relative;
+        left: -1rem;
+    }
+
+    .features-section{
+        width: 100vw;
+        line-height: 3rem;
+        margin-left:1rem;
+    }
+    
+    .features-text{
+       margin-top: -12rem;
+    }
+
+    .f-img-1 img{
+        width: 80vw;
+        margin: -5rem;
+    }
+
+
+   .hambuger{
+       display: inline;
+       position:absolute;
+       top: 4.3rem;
+       right: 2rem;
+   }
+
+   .footer-end {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+   }
+
+   .f-side{
+    margin-top: 12rem;
+    position: absolute;
+    left: -3rem;
+}
+
+  .btn-3{
+    display: none;
+  }
+
+   .f-side-text{
+    text-align: center;
+    }
+
+ .f-top{
+    margin-top: 14rem;
+ }
+
+ .text-2 {
+    text-align: center;
+}
+
+.dw-top{
+    margin-top: -5rem;
+}
+
+.sec-boxes {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec-box{
+    border: 3px solid #f5f5f5;
+    border-radius: 8px;
+    padding: 4rem 4rem; 
+    width: 75vw;
+    height: 55vh;
+    text-align: center;
+}
+
+.box-1{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+   .text-up{
+      margin-top: 2rem;   
+      margin-left: -9rem;
+
+   }
+       
+}
+
+
+
+
+
+
